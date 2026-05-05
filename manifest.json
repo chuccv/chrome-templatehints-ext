@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Magento Template Hints Toggle",
+  "version": "1.2.0",
+  "description": "Click icon to toggle ?templatehints=magento on the current tab.",
+  "permissions": ["activeTab", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle templatehints=magento",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
