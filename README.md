@@ -4,7 +4,19 @@ Chrome extension (Manifest V3) bật/tắt nhanh tham số `?templatehints=magen
 
 Một click = toggle: nếu URL chưa có param thì thêm vào, có rồi thì xoá. Tab tự reload với URL mới.
 
-## Cài đặt
+## Quick install (script all-in-one)
+
+```bash
+git clone git@github.com:chuccv/chrome-templatehints-ext.git
+cd chrome-templatehints-ext
+./install.sh           # clone (nếu cần) + mở chrome://extensions, bạn click Load unpacked
+./install.sh --launch  # khởi chạy Chrome với --load-extension, extension load sẵn
+./install.sh --help    # xem các flag khác
+```
+
+Script tự tìm `google-chrome` / `chromium` / `brave-browser` trong PATH. Nếu không có, sẽ in hướng dẫn cài thủ công.
+
+## Cài đặt thủ công
 
 1. Mở Chrome, vào `chrome://extensions`
 2. Bật **Developer mode** (góc phải trên)
